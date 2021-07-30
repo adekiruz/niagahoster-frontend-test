@@ -138,6 +138,26 @@
     </section>
 
     <!-- PRICING -->
+    <?php
+        $prices = [
+            'bayi' => [
+                'real_price' => '19.900',
+                'discounted_price' => ['14', '900']
+            ],
+            'pelajar' => [
+                'real_price' => '46.900',
+                'discounted_price' => ['23', '450']
+            ],
+            'personal' => [
+                'real_price' => '58.900',
+                'discounted_price' => ['38', '900']
+            ],
+            'bisnis' => [
+                'real_price' => '109.900',
+                'discounted_price' => ['65', '900']
+            ]
+        ];
+    ?>
     <section id="pricing" class="mt-5">
         <div class="container">
             <div class="row text-center">
@@ -153,10 +173,10 @@
                                     <div class="pricing-header">
                                         <div class="fs-4 pricing-card-title p-1 font-montserrat-bold">Bayi</div>
                                         <div class="pricing-card-price">
-                                            <div class="text-decoration-line-through">Rp 19.900</div>
+                                            <div class="text-decoration-line-through">Rp <?=$prices['bayi']['real_price']?></div>
                                             <div class="d-flex justify-content-center align-items-start">Rp <b
-                                                    class="discounted-price font-montserrat-bold">14</b><b
-                                                    class="font-montserrat-bold">.900</b>/bln</div>
+                                                    class="discounted-price font-montserrat-bold"><?=$prices['bayi']['discounted_price'][0]?></b><b
+                                                    class="font-montserrat-bold">.<?=$prices['bayi']['discounted_price'][1]?></b>/bln</div>
                                         </div>
                                         <div class="registered-users-count p-2"><b>938</b> Pengguna terdaftar</div>
                                     </div>
@@ -183,10 +203,10 @@
                                     <div class="pricing-header">
                                         <div class="fs-4 pricing-card-title p-1 font-montserrat-bold">Pelajar</div>
                                         <div class="pricing-card-price">
-                                            <div class="text-decoration-line-through">Rp 46.900</div>
+                                            <div class="text-decoration-line-through">Rp <?=$prices['pelajar']['real_price']?></div>
                                             <div class="d-flex justify-content-center align-items-start">Rp <b
-                                                    class="discounted-price font-montserrat-bold">23</b><b
-                                                    class="font-montserrat-bold">.450</b>/bln</div>
+                                                    class="discounted-price font-montserrat-bold"><?=$prices['pelajar']['discounted_price'][0]?></b><b
+                                                    class="font-montserrat-bold">.<?=$prices['pelajar']['discounted_price'][1]?></b>/bln</div>
                                         </div>
                                         <div class="registered-users-count p-2"><b>4.168</b> Pengguna terdaftar</div>
                                     </div>
@@ -216,17 +236,17 @@
                                     <div class="pricing-header">
                                         <div class="fs-4 pricing-card-title p-1 font-montserrat-bold">Personal</div>
                                         <div class="pricing-card-price">
-                                            <div class="text-decoration-line-through">Rp 58.900</div>
+                                            <div class="text-decoration-line-through">Rp <?=$prices['personal']['real_price']?></div>
                                             <div class="d-flex justify-content-center align-items-start">Rp <b
-                                                    class="discounted-price font-montserrat-bold">38</b><b
-                                                    class="font-montserrat-bold">.900</b>/bln</div>
+                                                    class="discounted-price font-montserrat-bold"><?=$prices['personal']['discounted_price'][0]?></b><b
+                                                    class="font-montserrat-bold">.<?=$prices['personal']['discounted_price'][1]?></b>/bln</div>
                                         </div>
                                         <div class="registered-users-count p-2"><b>10.017</b> Pengguna terdaftar</div>
                                     </div>
                                     <div class="pricing-body">
                                         <div class="features p-1 p-3">
                                             <div class="feature p-1"><b>2X RESOURCE POWER</b></div>
-                                            <div class="feature p-1"><b>Unlimited </b> Disk Space</div>
+                                            <div class="feature p-1"><b>Unlimited</b> Disk Space</div>
                                             <div class="feature p-1"><b>Unlimited</b> Bandwidth</div>
                                             <div class="feature p-1"><b>Unlimited</b> POP3 Email</div>
                                             <div class="feature p-1"><b>Unlimited</b> Databases</div>
@@ -250,10 +270,10 @@
                                     <div class="pricing-header">
                                         <div class="fs-4 pricing-card-title p-1 font-montserrat-bold">Bisnis</div>
                                         <div class="pricing-card-price">
-                                            <div class="text-decoration-line-through">Rp 109.900</div>
+                                            <div class="text-decoration-line-through">Rp <?=$prices['bisnis']['real_price']?></div>
                                             <div class="d-flex justify-content-center align-items-start">Rp <b
-                                                    class="discounted-price font-montserrat-bold">65</b><b
-                                                    class="font-montserrat-bold">.900</b>/bln</div>
+                                                    class="discounted-price font-montserrat-bold"><?=$prices['bisnis']['discounted_price'][0]?></b><b
+                                                    class="font-montserrat-bold">.<?=$prices['bisnis']['discounted_price'][1]?></b>/bln</div>
                                         </div>
                                         <div class="registered-users-count p-2"><b>3.552</b> Pengguna terdaftar</div>
                                     </div>
