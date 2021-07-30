@@ -91,6 +91,10 @@ section#pricing .pricing-card-title {
   border-bottom: 1px solid #f1f1f1;
 }
 
+section#pricing .pricing-card-price {
+    padding: 10px 0;
+}
+
 section#pricing .registered-users-count {
   border-bottom: 1px solid #f1f1f1;
   font-size: 15px;
@@ -99,6 +103,8 @@ section#pricing .registered-users-count {
 section#pricing .discounted-price {
   font-size: 45px;
   font-family: MontserratBold;
+  line-height: 0.8;
+  margin-left: 5px;
 }
 
 section#pricing .features {
@@ -119,6 +125,7 @@ section#pricing .pricing-card .choose-now-btn a {
 /* active element */
 section#pricing .active {
   border: 1px solid #007fde;
+  position: relative;
 }
 
 section#pricing .active .pricing-header {
